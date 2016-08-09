@@ -1,7 +1,9 @@
 # AbloomViews
 
 应用于列表图片飞去下一个ViewController ， 以及消失动画
+
 ![image](https://github.com/jiangsujia/AbloomViews/blob/master/show.gif)
+
 
 AbloomTableViewController 中 目前创建需要两步，在触发列表点击事件的时候 ：
 
