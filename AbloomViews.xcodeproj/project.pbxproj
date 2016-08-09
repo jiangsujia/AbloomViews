@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE57215B1CE33D0D00B7BB12 /* UIView+Abloom.m in Sources */ = {isa = PBXBuildFile; fileRef = EE57215A1CE33D0D00B7BB12 /* UIView+Abloom.m */; };
+		EE57215E1CE33E7A00B7BB12 /* AbloomBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE57215D1CE33E7A00B7BB12 /* AbloomBaseCell.m */; };
+		EE5721611CE33E9700B7BB12 /* AbloomBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5721601CE33E9700B7BB12 /* AbloomBaseView.m */; };
+		EE5721641CE340B400B7BB12 /* AbloomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5721631CE340B400B7BB12 /* AbloomTableViewController.m */; };
+		EE5721671CE340C600B7BB12 /* AbloomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5721661CE340C600B7BB12 /* AbloomViewController.m */; };
+		EE57216A1CE342A800B7BB12 /* AbloomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5721691CE342A800B7BB12 /* AbloomTableCell.m */; };
+		EE5721801CE35B7300B7BB12 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE57216C1CE35B7300B7BB12 /* 1.png */; };
+		EE877F4F1D586BB6003DEF77 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = EE877F3C1D586BB6003DEF77 /* 2.png */; };
+		EE877F501D586BB6003DEF77 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = EE877F3D1D586BB6003DEF77 /* 3.png */; };
+		EE877F511D586BB6003DEF77 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = EE877F3E1D586BB6003DEF77 /* 4.png */; };
+		EE877F521D586BB6003DEF77 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = EE877F3F1D586BB6003DEF77 /* 5.png */; };
+		EE877F531D586BB6003DEF77 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = EE877F401D586BB6003DEF77 /* 6.png */; };
+		EE877F541D586BB6003DEF77 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = EE877F411D586BB6003DEF77 /* 7.png */; };
+		EE877F551D586BB6003DEF77 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = EE877F421D586BB6003DEF77 /* 8.png */; };
+		EE877F561D586BB6003DEF77 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = EE877F431D586BB6003DEF77 /* 9.png */; };
+		EE877F571D586BB6003DEF77 /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = EE877F441D586BB6003DEF77 /* 10.png */; };
+		EE877F581D586BB6003DEF77 /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = EE877F451D586BB6003DEF77 /* 11.png */; };
+		EE877F591D586BB6003DEF77 /* 12.png in Resources */ = {isa = PBXBuildFile; fileRef = EE877F461D586BB6003DEF77 /* 12.png */; };
+		EE877F5A1D586BB6003DEF77 /* 13.png in Resources */ = {isa = PBXBuildFile; fileRef = EE877F471D586BB6003DEF77 /* 13.png */; };
+		EE877F5B1D586BB6003DEF77 /* 14.png in Resources */ = {isa = PBXBuildFile; fileRef = EE877F481D586BB6003DEF77 /* 14.png */; };
+		EE877F5C1D586BB6003DEF77 /* 15.png in Resources */ = {isa = PBXBuildFile; fileRef = EE877F491D586BB6003DEF77 /* 15.png */; };
+		EE877F5D1D586BB6003DEF77 /* 16.png in Resources */ = {isa = PBXBuildFile; fileRef = EE877F4A1D586BB6003DEF77 /* 16.png */; };
+		EE877F5E1D586BB6003DEF77 /* 17.png in Resources */ = {isa = PBXBuildFile; fileRef = EE877F4B1D586BB6003DEF77 /* 17.png */; };
+		EE877F5F1D586BB6003DEF77 /* 18.png in Resources */ = {isa = PBXBuildFile; fileRef = EE877F4C1D586BB6003DEF77 /* 18.png */; };
+		EE877F601D586BB6003DEF77 /* 19.png in Resources */ = {isa = PBXBuildFile; fileRef = EE877F4D1D586BB6003DEF77 /* 19.png */; };
+		EE877F611D586BB6003DEF77 /* 20.png in Resources */ = {isa = PBXBuildFile; fileRef = EE877F4E1D586BB6003DEF77 /* 20.png */; };
+		EE877F651D59AACF003DEF77 /* AbloomDismissViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE877F641D59AACF003DEF77 /* AbloomDismissViewController.m */; };
+		EEE180181CE3310A00F2ABDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE180171CE3310A00F2ABDF /* main.m */; };
+		EEE1801B1CE3310A00F2ABDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE1801A1CE3310A00F2ABDF /* AppDelegate.m */; };
+		EEE1801E1CE3310A00F2ABDF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE1801D1CE3310A00F2ABDF /* ViewController.m */; };
+		EEE180211CE3310A00F2ABDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE1801F1CE3310A00F2ABDF /* Main.storyboard */; };
+		EEE180231CE3310A00F2ABDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE180221CE3310A00F2ABDF /* Assets.xcassets */; };
+		EEE180261CE3310A00F2ABDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE180241CE3310A00F2ABDF /* LaunchScreen.storyboard */; };
+		EEE180311CE3310A00F2ABDF /* AbloomViewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE180301CE3310A00F2ABDF /* AbloomViewsUITests.m */; };
+		EEE180451CE3313C00F2ABDF /* OCAbloomTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE1803F1CE3313C00F2ABDF /* OCAbloomTransition.m */; };
+		EEE180461CE3313C00F2ABDF /* OCBaseTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE180411CE3313C00F2ABDF /* OCBaseTransition.m */; };
+		EEE180471CE3313C00F2ABDF /* UIViewController+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE180431CE3313C00F2ABDF /* UIViewController+Transition.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EEE1802D1CE3310A00F2ABDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEE1800B1CE3310A00F2ABDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEE180121CE3310A00F2ABDF;
+			remoteInfo = AbloomViews;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE5721541CE33B3F00B7BB12 /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		EE5721591CE33D0D00B7BB12 /* UIView+Abloom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Abloom.h"; sourceTree = "<group>"; };
+		EE57215A1CE33D0D00B7BB12 /* UIView+Abloom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Abloom.m"; sourceTree = "<group>"; };
+		EE57215C1CE33E7A00B7BB12 /* AbloomBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbloomBaseCell.h; sourceTree = "<group>"; };
+		EE57215D1CE33E7A00B7BB12 /* AbloomBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbloomBaseCell.m; sourceTree = "<group>"; };
+		EE57215F1CE33E9700B7BB12 /* AbloomBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbloomBaseView.h; sourceTree = "<group>"; };
+		EE5721601CE33E9700B7BB12 /* AbloomBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbloomBaseView.m; sourceTree = "<group>"; };
+		EE5721621CE340B400B7BB12 /* AbloomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbloomTableViewController.h; sourceTree = "<group>"; };
+		EE5721631CE340B400B7BB12 /* AbloomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbloomTableViewController.m; sourceTree = "<group>"; };
+		EE5721651CE340C600B7BB12 /* AbloomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbloomViewController.h; sourceTree = "<group>"; };
+		EE5721661CE340C600B7BB12 /* AbloomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbloomViewController.m; sourceTree = "<group>"; };
+		EE5721681CE342A800B7BB12 /* AbloomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbloomTableCell.h; sourceTree = "<group>"; };
+		EE5721691CE342A800B7BB12 /* AbloomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbloomTableCell.m; sourceTree = "<group>"; };
+		EE57216C1CE35B7300B7BB12 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		EE877F3C1D586BB6003DEF77 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		EE877F3D1D586BB6003DEF77 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		EE877F3E1D586BB6003DEF77 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		EE877F3F1D586BB6003DEF77 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		EE877F401D586BB6003DEF77 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		EE877F411D586BB6003DEF77 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		EE877F421D586BB6003DEF77 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		EE877F431D586BB6003DEF77 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
+		EE877F441D586BB6003DEF77 /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
+		EE877F451D586BB6003DEF77 /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		EE877F461D586BB6003DEF77 /* 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12.png; sourceTree = "<group>"; };
+		EE877F471D586BB6003DEF77 /* 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13.png; sourceTree = "<group>"; };
+		EE877F481D586BB6003DEF77 /* 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 14.png; sourceTree = "<group>"; };
+		EE877F491D586BB6003DEF77 /* 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 15.png; sourceTree = "<group>"; };
+		EE877F4A1D586BB6003DEF77 /* 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16.png; sourceTree = "<group>"; };
+		EE877F4B1D586BB6003DEF77 /* 17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 17.png; sourceTree = "<group>"; };
+		EE877F4C1D586BB6003DEF77 /* 18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 18.png; sourceTree = "<group>"; };
+		EE877F4D1D586BB6003DEF77 /* 19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 19.png; sourceTree = "<group>"; };
+		EE877F4E1D586BB6003DEF77 /* 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20.png; sourceTree = "<group>"; };
+		EE877F631D59AACF003DEF77 /* AbloomDismissViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbloomDismissViewController.h; sourceTree = "<group>"; };
+		EE877F641D59AACF003DEF77 /* AbloomDismissViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbloomDismissViewController.m; sourceTree = "<group>"; };
+		EEE180131CE3310A00F2ABDF /* AbloomViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbloomViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEE180171CE3310A00F2ABDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EEE180191CE3310A00F2ABDF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EEE1801A1CE3310A00F2ABDF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EEE1801C1CE3310A00F2ABDF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EEE1801D1CE3310A00F2ABDF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EEE180201CE3310A00F2ABDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEE180221CE3310A00F2ABDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEE180251CE3310A00F2ABDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EEE180271CE3310A00F2ABDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEE1802C1CE3310A00F2ABDF /* AbloomViewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbloomViewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEE180301CE3310A00F2ABDF /* AbloomViewsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbloomViewsUITests.m; sourceTree = "<group>"; };
+		EEE180321CE3310A00F2ABDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEE1803E1CE3313C00F2ABDF /* OCAbloomTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCAbloomTransition.h; sourceTree = "<group>"; };
+		EEE1803F1CE3313C00F2ABDF /* OCAbloomTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCAbloomTransition.m; sourceTree = "<group>"; };
+		EEE180401CE3313C00F2ABDF /* OCBaseTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCBaseTransition.h; sourceTree = "<group>"; };
+		EEE180411CE3313C00F2ABDF /* OCBaseTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCBaseTransition.m; sourceTree = "<group>"; };
+		EEE180421CE3313C00F2ABDF /* UIViewController+Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Transition.h"; sourceTree = "<group>"; };
+		EEE180431CE3313C00F2ABDF /* UIViewController+Transition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Transition.m"; sourceTree = "<group>"; };
+		EEE1804A1CE3366900F2ABDF /* Abloom.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Abloom.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEE180101CE3310A00F2ABDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE180291CE3310A00F2ABDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE5721551CE33CB300B7BB12 /* AbloomConfig */ = {
+			isa = PBXGroup;
+			children = (
+				EE5721591CE33D0D00B7BB12 /* UIView+Abloom.h */,
+				EE57215A1CE33D0D00B7BB12 /* UIView+Abloom.m */,
+				EE57215C1CE33E7A00B7BB12 /* AbloomBaseCell.h */,
+				EE57215D1CE33E7A00B7BB12 /* AbloomBaseCell.m */,
+				EE57215F1CE33E9700B7BB12 /* AbloomBaseView.h */,
+				EE5721601CE33E9700B7BB12 /* AbloomBaseView.m */,
+			);
+			path = AbloomConfig;
+			sourceTree = "<group>";
+		};
+		EE57216B1CE35B7300B7BB12 /* zhongji */ = {
+			isa = PBXGroup;
+			children = (
+				EE57216C1CE35B7300B7BB12 /* 1.png */,
+				EE877F3C1D586BB6003DEF77 /* 2.png */,
+				EE877F3D1D586BB6003DEF77 /* 3.png */,
+				EE877F3E1D586BB6003DEF77 /* 4.png */,
+				EE877F3F1D586BB6003DEF77 /* 5.png */,
+				EE877F401D586BB6003DEF77 /* 6.png */,
+				EE877F411D586BB6003DEF77 /* 7.png */,
+				EE877F421D586BB6003DEF77 /* 8.png */,
+				EE877F431D586BB6003DEF77 /* 9.png */,
+				EE877F441D586BB6003DEF77 /* 10.png */,
+				EE877F451D586BB6003DEF77 /* 11.png */,
+				EE877F461D586BB6003DEF77 /* 12.png */,
+				EE877F471D586BB6003DEF77 /* 13.png */,
+				EE877F481D586BB6003DEF77 /* 14.png */,
+				EE877F491D586BB6003DEF77 /* 15.png */,
+				EE877F4A1D586BB6003DEF77 /* 16.png */,
+				EE877F4B1D586BB6003DEF77 /* 17.png */,
+				EE877F4C1D586BB6003DEF77 /* 18.png */,
+				EE877F4D1D586BB6003DEF77 /* 19.png */,
+				EE877F4E1D586BB6003DEF77 /* 20.png */,
+			);
+			path = zhongji;
+			sourceTree = "<group>";
+		};
+		EE877F621D59AA4A003DEF77 /* TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EE5721681CE342A800B7BB12 /* AbloomTableCell.h */,
+				EE5721691CE342A800B7BB12 /* AbloomTableCell.m */,
+				EE5721621CE340B400B7BB12 /* AbloomTableViewController.h */,
+				EE5721631CE340B400B7BB12 /* AbloomTableViewController.m */,
+				EE877F631D59AACF003DEF77 /* AbloomDismissViewController.h */,
+				EE877F641D59AACF003DEF77 /* AbloomDismissViewController.m */,
+			);
+			path = TableViewController;
+			sourceTree = "<group>";
+		};
+		EEE1800A1CE3310A00F2ABDF = {
+			isa = PBXGroup;
+			children = (
+				EEE180151CE3310A00F2ABDF /* AbloomViews */,
+				EEE1802F1CE3310A00F2ABDF /* AbloomViewsUITests */,
+				EEE180141CE3310A00F2ABDF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EEE180141CE3310A00F2ABDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEE180131CE3310A00F2ABDF /* AbloomViews.app */,
+				EEE1802C1CE3310A00F2ABDF /* AbloomViewsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEE180151CE3310A00F2ABDF /* AbloomViews */ = {
+			isa = PBXGroup;
+			children = (
+				EE57216B1CE35B7300B7BB12 /* zhongji */,
+				EE5721551CE33CB300B7BB12 /* AbloomConfig */,
+				EEE1803B1CE3313C00F2ABDF /* OCTransition */,
+				EEE180191CE3310A00F2ABDF /* AppDelegate.h */,
+				EEE1801A1CE3310A00F2ABDF /* AppDelegate.m */,
+				EE877F621D59AA4A003DEF77 /* TableViewController */,
+				EEE1801C1CE3310A00F2ABDF /* ViewController.h */,
+				EEE1801D1CE3310A00F2ABDF /* ViewController.m */,
+				EE5721651CE340C600B7BB12 /* AbloomViewController.h */,
+				EE5721661CE340C600B7BB12 /* AbloomViewController.m */,
+				EEE1801F1CE3310A00F2ABDF /* Main.storyboard */,
+				EEE180221CE3310A00F2ABDF /* Assets.xcassets */,
+				EEE180241CE3310A00F2ABDF /* LaunchScreen.storyboard */,
+				EEE180271CE3310A00F2ABDF /* Info.plist */,
+				EEE180161CE3310A00F2ABDF /* Supporting Files */,
+			);
+			path = AbloomViews;
+			sourceTree = "<group>";
+		};
+		EEE180161CE3310A00F2ABDF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEE180171CE3310A00F2ABDF /* main.m */,
+				EE5721541CE33B3F00B7BB12 /* Const.h */,
+				EEE1804A1CE3366900F2ABDF /* Abloom.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EEE1802F1CE3310A00F2ABDF /* AbloomViewsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EEE180301CE3310A00F2ABDF /* AbloomViewsUITests.m */,
+				EEE180321CE3310A00F2ABDF /* Info.plist */,
+			);
+			path = AbloomViewsUITests;
+			sourceTree = "<group>";
+		};
+		EEE1803B1CE3313C00F2ABDF /* OCTransition */ = {
+			isa = PBXGroup;
+			children = (
+				EEE1803E1CE3313C00F2ABDF /* OCAbloomTransition.h */,
+				EEE1803F1CE3313C00F2ABDF /* OCAbloomTransition.m */,
+				EEE180401CE3313C00F2ABDF /* OCBaseTransition.h */,
+				EEE180411CE3313C00F2ABDF /* OCBaseTransition.m */,
+				EEE180421CE3313C00F2ABDF /* UIViewController+Transition.h */,
+				EEE180431CE3313C00F2ABDF /* UIViewController+Transition.m */,
+			);
+			path = OCTransition;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEE180121CE3310A00F2ABDF /* AbloomViews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEE180351CE3310A00F2ABDF /* Build configuration list for PBXNativeTarget "AbloomViews" */;
+			buildPhases = (
+				EEE1800F1CE3310A00F2ABDF /* Sources */,
+				EEE180101CE3310A00F2ABDF /* Frameworks */,
+				EEE180111CE3310A00F2ABDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AbloomViews;
+			productName = AbloomViews;
+			productReference = EEE180131CE3310A00F2ABDF /* AbloomViews.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EEE1802B1CE3310A00F2ABDF /* AbloomViewsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEE180381CE3310A00F2ABDF /* Build configuration list for PBXNativeTarget "AbloomViewsUITests" */;
+			buildPhases = (
+				EEE180281CE3310A00F2ABDF /* Sources */,
+				EEE180291CE3310A00F2ABDF /* Frameworks */,
+				EEE1802A1CE3310A00F2ABDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEE1802E1CE3310A00F2ABDF /* PBXTargetDependency */,
+			);
+			name = AbloomViewsUITests;
+			productName = AbloomViewsUITests;
+			productReference = EEE1802C1CE3310A00F2ABDF /* AbloomViewsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEE1800B1CE3310A00F2ABDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "姜苏珈";
+				TargetAttributes = {
+					EEE180121CE3310A00F2ABDF = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					EEE1802B1CE3310A00F2ABDF = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = EEE180121CE3310A00F2ABDF;
+					};
+				};
+			};
+			buildConfigurationList = EEE1800E1CE3310A00F2ABDF /* Build configuration list for PBXProject "AbloomViews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEE1800A1CE3310A00F2ABDF;
+			productRefGroup = EEE180141CE3310A00F2ABDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEE180121CE3310A00F2ABDF /* AbloomViews */,
+				EEE1802B1CE3310A00F2ABDF /* AbloomViewsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEE180111CE3310A00F2ABDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE877F591D586BB6003DEF77 /* 12.png in Resources */,
+				EE877F5D1D586BB6003DEF77 /* 16.png in Resources */,
+				EE877F571D586BB6003DEF77 /* 10.png in Resources */,
+				EE877F551D586BB6003DEF77 /* 8.png in Resources */,
+				EEE180261CE3310A00F2ABDF /* LaunchScreen.storyboard in Resources */,
+				EE877F5E1D586BB6003DEF77 /* 17.png in Resources */,
+				EE877F511D586BB6003DEF77 /* 4.png in Resources */,
+				EEE180231CE3310A00F2ABDF /* Assets.xcassets in Resources */,
+				EE877F581D586BB6003DEF77 /* 11.png in Resources */,
+				EE877F601D586BB6003DEF77 /* 19.png in Resources */,
+				EE877F531D586BB6003DEF77 /* 6.png in Resources */,
+				EE877F4F1D586BB6003DEF77 /* 2.png in Resources */,
+				EE877F5C1D586BB6003DEF77 /* 15.png in Resources */,
+				EE877F5F1D586BB6003DEF77 /* 18.png in Resources */,
+				EE877F501D586BB6003DEF77 /* 3.png in Resources */,
+				EE877F521D586BB6003DEF77 /* 5.png in Resources */,
+				EE877F541D586BB6003DEF77 /* 7.png in Resources */,
+				EE877F561D586BB6003DEF77 /* 9.png in Resources */,
+				EE877F611D586BB6003DEF77 /* 20.png in Resources */,
+				EE877F5A1D586BB6003DEF77 /* 13.png in Resources */,
+				EEE180211CE3310A00F2ABDF /* Main.storyboard in Resources */,
+				EE5721801CE35B7300B7BB12 /* 1.png in Resources */,
+				EE877F5B1D586BB6003DEF77 /* 14.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE1802A1CE3310A00F2ABDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEE1800F1CE3310A00F2ABDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE57215B1CE33D0D00B7BB12 /* UIView+Abloom.m in Sources */,
+				EE877F651D59AACF003DEF77 /* AbloomDismissViewController.m in Sources */,
+				EE5721611CE33E9700B7BB12 /* AbloomBaseView.m in Sources */,
+				EEE180451CE3313C00F2ABDF /* OCAbloomTransition.m in Sources */,
+				EEE180461CE3313C00F2ABDF /* OCBaseTransition.m in Sources */,
+				EEE1801E1CE3310A00F2ABDF /* ViewController.m in Sources */,
+				EE57215E1CE33E7A00B7BB12 /* AbloomBaseCell.m in Sources */,
+				EE5721641CE340B400B7BB12 /* AbloomTableViewController.m in Sources */,
+				EEE1801B1CE3310A00F2ABDF /* AppDelegate.m in Sources */,
+				EE57216A1CE342A800B7BB12 /* AbloomTableCell.m in Sources */,
+				EEE180181CE3310A00F2ABDF /* main.m in Sources */,
+				EE5721671CE340C600B7BB12 /* AbloomViewController.m in Sources */,
+				EEE180471CE3313C00F2ABDF /* UIViewController+Transition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE180281CE3310A00F2ABDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEE180311CE3310A00F2ABDF /* AbloomViewsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EEE1802E1CE3310A00F2ABDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEE180121CE3310A00F2ABDF /* AbloomViews */;
+			targetProxy = EEE1802D1CE3310A00F2ABDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EEE1801F1CE3310A00F2ABDF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEE180201CE3310A00F2ABDF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EEE180241CE3310A00F2ABDF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEE180251CE3310A00F2ABDF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EEE180331CE3310A00F2ABDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EEE180341CE3310A00F2ABDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EEE180361CE3310A00F2ABDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AbloomViews/Abloom.pch";
+				INFOPLIST_FILE = AbloomViews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jiangsujia.AbloomViews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EEE180371CE3310A00F2ABDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AbloomViews/Abloom.pch";
+				INFOPLIST_FILE = AbloomViews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jiangsujia.AbloomViews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EEE180391CE3310A00F2ABDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AbloomViewsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jiangsujia.AbloomViewsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AbloomViews;
+			};
+			name = Debug;
+		};
+		EEE1803A1CE3310A00F2ABDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AbloomViewsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jiangsujia.AbloomViewsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AbloomViews;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEE1800E1CE3310A00F2ABDF /* Build configuration list for PBXProject "AbloomViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE180331CE3310A00F2ABDF /* Debug */,
+				EEE180341CE3310A00F2ABDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEE180351CE3310A00F2ABDF /* Build configuration list for PBXNativeTarget "AbloomViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE180361CE3310A00F2ABDF /* Debug */,
+				EEE180371CE3310A00F2ABDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEE180381CE3310A00F2ABDF /* Build configuration list for PBXNativeTarget "AbloomViewsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE180391CE3310A00F2ABDF /* Debug */,
+				EEE1803A1CE3310A00F2ABDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEE1800B1CE3310A00F2ABDF /* Project object */;
+}
