@@ -1,4 +1,4 @@
-# AbloomViews
+# AbloomViews -- 仿开眼点击效果
 
 应用于列表图片飞去下一个ViewController ， 以及消失动画
 
