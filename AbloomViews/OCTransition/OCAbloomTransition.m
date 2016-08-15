@@ -24,6 +24,8 @@
     UIView *fromView = self.fromView;
     UIView *toView = self.toView;
     
+    toView.hidden = YES;
+   
     //Take Snapshot of fromeView
     NSTimeInterval duration = [self transitionDuration:transitionContext];
     UIView *abloomView = fromView;
@@ -43,33 +45,47 @@
         }
         
         //Setup the initial view states
-        toView.alpha = 0;
+//        toView.alpha = 0;
         [fromVC.view setFrame:fromFrame];
-        //edit by tujinguo 修改toViwe动画起始位置
-        [toVC.view setFrame:CGRectMake(CGRectGetMinX(toView.frame), CGRectGetMinY(toView.frame), 0, 0)];
         
+        UIView *toViewSuperView = toView;
+        CGFloat originY = CGRectGetMinY(toView.frame);
+        CGFloat originX = CGRectGetMinX(toView.frame);
+        while (![toViewSuperView isEqual:toVC.view]) {
+            toViewSuperView = toViewSuperView.superview;
+            originY += CGRectGetMinY(toViewSuperView.frame);
+            originX += CGRectGetMinX(toViewSuperView.frame);
+        }
         
         [containerView insertSubview:toVC.view aboveSubview:fromVC.view];
         [containerView addSubview:abloomView];
         [containerView addSubview:toVC.view];
+        
         toVC.view.alpha = 0;
         
-        toFrame.origin.y = 0;
-        CGRect stayFrame = CGRectMake(CGRectGetMinX(toView.frame), CGRectGetMinY(toView.frame), CGRectGetWidth(toView.frame), CGRectGetHeight(toView.frame));
+        CGRect stayFrame = CGRectMake(originX, originY, CGRectGetWidth(toView.frame), CGRectGetHeight(toView.frame));
+        
+        
+        [UIView animateWithDuration:duration/2 animations:^{
+            toVC.view.alpha = 1;
+            abloomView.frame = [containerView convertRect:stayFrame fromView:fromView.superview];
+            [containerView bringSubviewToFront:abloomView];
+            
+            CGFloat scaleY = CGRectGetHeight(abloomView.frame) / CGRectGetHeight(toVC.view.frame);
+            CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale.y"];
+            scaleAnimation.fromValue = [NSNumber numberWithFloat:scaleY];
+            scaleAnimation.toValue = [NSNumber numberWithFloat:1];
+            scaleAnimation.duration = duration/2;
+            scaleAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+            [toVC.view.layer addAnimation:scaleAnimation forKey:@"scaleAnimation"];
 
-        [UIView animateWithDuration:duration
-                         animations:^{
-                             toVC.view.alpha = 1;
-                             [toVC.view setFrame:toFrame];
-                             abloomView.frame = [containerView convertRect:stayFrame fromView:fromView.superview];
-                             [containerView bringSubviewToFront:abloomView];
-        }
-                         completion:^(BOOL finished) {
-                             toView.alpha = 1;
-                             [transitionContext completeTransition:YES];
-                             [abloomView removeFromSuperview];
-                             [fromVC.view removeFromSuperview];
-                         }];
+        } completion:^(BOOL finished) {
+            toView.alpha = 1;
+            toView.hidden = NO;
+            [transitionContext completeTransition:YES];
+            [abloomView removeFromSuperview];
+            [fromVC.view removeFromSuperview];
+        }];
     }else
     {
         if (toView.frame.origin.y > AHeight/2) {
@@ -80,23 +96,43 @@
         [containerView insertSubview:toVC.view aboveSubview:fromVC.view];
         [containerView addSubview:abloomView];
         [containerView addSubview:toVC.view];
+        [containerView sendSubviewToBack:toVC.view];
         [containerView bringSubviewToFront:abloomView];
+        
 
-        toVC.view.alpha = 0;
-        CGRect stayFrame = CGRectMake(toView.frame.origin.x, toView.frame.origin.y, toView.frame.size.width, toView.frame.size.height);
+        CGRect stayFrame = CGRectMake(CGRectGetMinX(toView.frame), CGRectGetMinY(toView.frame), CGRectGetWidth(toView.frame), CGRectGetHeight(toView.frame));
 
         toFrame.origin.y = 0;
-        [UIView animateWithDuration:duration
-                         animations:^{
-                             toVC.view.alpha = 1;
-                             [toVC.view setFrame:toFrame];
-                             abloomView.frame = [containerView convertRect:stayFrame fromView:toView.superview];
-                             abloomView.alpha = 0;
-                         } completion:^(BOOL finished) {
-                             [transitionContext completeTransition:YES];
-                             [abloomView removeFromSuperview];
-                             [fromVC.view removeFromSuperview];
-                         }];
+        
+        [UIView animateWithDuration:duration/2 animations:^{
+            fromVC.view.alpha = 0;
+            
+            CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale.y"];
+            scaleAnimation.fromValue = [NSNumber numberWithFloat:1];
+            scaleAnimation.toValue = [NSNumber numberWithFloat:0];
+            scaleAnimation.duration = duration/2;
+            scaleAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+            
+            CABasicAnimation *moveAnimation = [CABasicAnimation animationWithKeyPath:@"transfom.position"];
+            moveAnimation.fromValue = [NSValue valueWithCGPoint:fromVC.view.layer.position];
+            moveAnimation.fromValue = [NSValue valueWithCGPoint:abloomView.layer.position];
+
+            CAAnimationGroup *groupAnimation = [CAAnimationGroup animation];
+            groupAnimation.duration = duration/2;
+            [groupAnimation setAnimations:@[scaleAnimation, moveAnimation]];
+            
+            [fromVC.view.layer addAnimation:groupAnimation forKey:@"groupAnimation"];
+            
+            toVC.view.alpha = 1;
+            [toVC.view setFrame:toFrame];
+            abloomView.frame = [containerView convertRect:stayFrame fromView:toView.superview];
+            
+        } completion:^(BOOL finished) {
+            [transitionContext completeTransition:YES];
+            [abloomView removeFromSuperview];
+            [fromVC.view removeFromSuperview];
+            [fromVC.view.layer removeAnimationForKey:@"groupAnimation"];
+        }];
     }
     
 }
